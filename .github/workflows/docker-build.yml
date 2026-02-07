@@ -25,9 +25,10 @@ jobs:
       # Step 3: Build the Docker image
       - name: Build Docker image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/dockerfile-practice:latest .
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-ashleykchan-docker:latest .
 
       # Step 4: Push the image to DockerHub
       - name: Push Docker image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/dockerfile-practice:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/dsci310-ia3-ashleykchan-docker:latest 
+
